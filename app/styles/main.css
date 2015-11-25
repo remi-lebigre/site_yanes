@@ -1,0 +1,165 @@
+html {
+    height: 100%;
+}
+
+/* Space out content a bit */
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff6de;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+/* Custom page header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+a, a:hover, a:focus, a:visited {
+    color: #fffeee;
+    text-decoration: none;
+}
+
+h1 {
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.subtitle {
+    font-style: italic;
+    float: right;
+    font-size: 0.5em;
+}
+
+.name {
+    float: right;
+    font-size: 0.8em;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin: 20% 0 0 20%;
+}
+
+#background_video {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    filter: blur(5px) saturate(30%);
+    -webkit-filter: blur(5px) saturate(30%);
+    -moz-filter: blur(5px) saturate(30%);
+    -o-filter: blur(5px) saturate(30%);
+}
+
+#background_video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#filter_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.8);
+}
+
+.filter_presentation {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    z-index: 3;
+    position: fixed;
+    top: 20px;
+    right: 5%;
+}
+
+nav li {
+    display: inline-block;
+    color: #fff;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+section {
+    padding-top: 100px;
+}
+
+#presentation {
+    background: url(../images/yanes.jpg) center center no-repeat;
+    background-size: cover;
+    -webkit-filter: grayscale(0.6);
+    filter: grayscale(0.6);
+    -moz-filter: grayscale(0.6);
+}
+
+.presentation_agnes {
+    position: absolute;
+    color: #333;
+    top: 8vh;
+    left: 26vw;
+}
+
+.presentation_yannick {
+    position: absolute;
+    left: 2%;
+    top: 70vh;
+}
+
+#contact {
+    background: url(../images/yanes_4_mains.jpg) center center no-repeat;
+    background-size: cover;
+    -webkit-filter: grayscale(0.6);
+    filter: grayscale(0.6);
+    -moz-filter: grayscale(0.6);
+}
+
+form {
+    margin-top: 20vh;
+}
+
+#gallerie {
+    padding-bottom: 100px;
+    height: 80vh;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+footer {
+    height: 20vh;
+    background-color: #333;
+}
+footer h3{
+    text-align: center;
+}
