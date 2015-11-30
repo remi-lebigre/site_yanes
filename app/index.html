@@ -2,26 +2,28 @@
 <html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
-    <title>site</title>
+    <title>Duo Yanes - Concerts de piano à 4 mains</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700,400italic' rel='stylesheet'
+          type='text/css'>
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css"/>
     <!-- endbower -->
     <!-- endbuild -->
+    <link rel="stylesheet" href="styles/featherlight.min.css">
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-
 </head>
 <body>
 <!--[if lt IE 10]>
@@ -30,16 +32,17 @@
 <![endif]-->
 
 <div id="background_video">
-    <video id="video" src="images/background_video_colored.mp4" autoplay loop></video>
+    <video id="video" src="images/background_video_colored_stabilized_minified.mp4" autoplay loop></video>
 </div>
+<audio src="images/audio.mp3" id="audio" autoplay></audio>
 <div class="container-fluid">
     <nav>
         <ul>
-            <li><a href="#home">Accueil &middot;</a></li>
-            <li><a href="#presentation">Agnès & Yannick &middot;</a></li>
-            <li><a href="#repertoire">Répertoire &middot;</a></li>
-            <li><a href="#contact">Contact &middot;</a></li>
-            <li><a href="#gallerie">Gallerie</a></li>
+            <li><a href="#home">Accueil</a></li> &middot;
+            <li><a href="#presentation">Agnès & Yannick</a></li> &middot;
+            <li><a href="#repertoire">Répertoire</a></li> &middot;
+            <li><a href="#contact">Contact</a></li> &middot;
+            <li><a href="#gallerie">Gallerie <span class="mobile_visible">&middot;</span></a></li>
         </ul>
     </nav>
 
@@ -53,16 +56,16 @@
     <section id="presentation">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 presentation_agnes">
-                    <h3>Agnès Neboit</h3>
+                <div class="col-xs-9 col-sm-2 presentation_agnes">
+                    <h3>Agnès <br><span class="bigger">Neboit</span></h3>
                     <article>
                         <p>est initiée à la musique depuis son plus jeune âge dans une famille musicienne. Elle débute
                             le piano à 6 ans et remporte plusieurs prix de concours, suit des études de musicologie à la
                             Sorbonne. Elle enseigne le piano et pratique régulièrement des programmes à 4 mains.</p>
                     </article>
                 </div>
-                <div class="col-xs-12 col-sm-6 presentation_yannick">
-                    <h3>Yannick Lebigre</h3>
+                <div class="col-xs-9 col-sm-2 presentation_yannick">
+                    <h3>Yannick <br><span class="bigger">Lebigre</span></h3>
                     <article>
                         <p>débute le piano à 8 ans et fait ses études à l’Ecole Normale de Musique de Paris où il
                             obtient son prix de concertiste. Il enseigne le piano et accompagne les classes de chant
@@ -76,45 +79,72 @@
     <section id="repertoire">
         <div class="filter_presentation"></div>
         <div class="container">
-            <h3>Répertoire</h3>
-            <hr/>
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at aut blanditiis culpa dicta
-                    doloremque ducimus earum esse eveniet ex excepturi, fuga iusto labore, laboriosam optio perspiciatis
-                    quam, reiciendis sequi?</p>
-            </article>
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at aut blanditiis culpa dicta
-                    doloremque ducimus earum esse eveniet ex excepturi, fuga iusto labore, laboriosam optio perspiciatis
-                    quam, reiciendis sequi?</p>
-            </article>
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at aut blanditiis culpa dicta
-                    doloremque ducimus earum esse eveniet ex excepturi, fuga iusto labore, laboriosam optio perspiciatis
-                    quam, reiciendis sequi?</p>
-            </article>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Répertoire</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 first_paragraph">
+                    <article>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at aut blanditiis culpa
+                            dicta
+                            doloremque ducimus earum esse eveniet ex excepturi, fuga iusto labore, laboriosam optio
+                            perspiciatis
+                            quam, reiciendis sequi?</p>
+                    </article>
+                    <article>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at aut blanditiis culpa
+                            dicta
+                            doloremque ducimus earum esse eveniet ex excepturi, fuga iusto labore, laboriosam optio
+                            perspiciatis
+                            quam, reiciendis sequi?</p>
+                    </article>
+                    <article>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at aut blanditiis culpa
+                            dicta
+                            doloremque ducimus earum esse eveniet ex excepturi, fuga iusto labore, laboriosam optio
+                            perspiciatis
+                            quam, reiciendis sequi?</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <hr class="small_hr">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at aut blanditiis culpa dicta
+                        doloremque ducimus earum esse eveniet ex excepturi, fuga iusto labore, laboriosam optio
+                        perspiciatis
+                        quam, reiciendis sequi?</p>
+
+                    <hr class="small_hr">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at aut blanditiis culpa dicta
+                        doloremque ducimus earum esse eveniet ex excepturi, fuga iusto labore, laboriosam optio
+                        perspiciatis
+                        quam, reiciendis sequi?</p>
+                </div>
+            </div>
         </div>
     </section>
     <section id="contact">
         <div class="filter_presentation"></div>
         <div class="container">
-            <h3>Contactez-nous</h3>
-            <hr/>
+            <h3>Contact</h3>
+
             <form>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
-
-                        <div class="form-group">
-                            <label for="form_nom">Nom</label>
-                            <input type="email" class="form-control" id="form_nom" placeholder="Nom">
+                    <div class="col-xs-12 col-sm-7">
+                        <div class="row">
+                            <div class="form-group col-xs-12 col-sm-6">
+                                <label for="form_nom">Nom</label>
+                                <input type="email" class="form-control" id="form_nom">
+                            </div>
+                            <div class="form-group col-xs-12 col-sm-6">
+                                <label for="form_email">Email</label>
+                                <input type="email" class="form-control" id="form_email">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="form_email">Email</label>
-                            <input type="email" class="form-control" id="form_email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
+                        <div class="row form-group">
                             <label for="form_content">Décrivez-nous votre besoin</label>
-                            <textarea class="form-control" id="form_content" rows="5"></textarea>
+                            <textarea class="form-control" id="form_content" rows="4"></textarea>
                         </div>
                         <button type="submit" class="btn btn-default">Envoyer</button>
                     </div>
@@ -129,22 +159,40 @@
             <h3>Gallerie</h3>
             <hr/>
             <div class="row">
-                <div class="col-xs-6 col-sm-3 image"><img src="images/gallery/1.jpg" alt=""/></div>
-                <div class="col-xs-6 col-sm-3 image"><img src="images/gallery/2.jpg" alt=""/></div>
-                <div class="col-xs-6 col-sm-3 image"><img src="images/gallery/3.jpg" alt=""/></div>
-                <div class="col-xs-6 col-sm-3 image"><img src="images/gallery/4.jpg" alt=""/></div>
+                <div class="col-xs-6 col-sm-3 image"><a href="#" data-featherlight="images/gallery/1.jpg"> <img
+                        src="images/gallery/1.jpg" alt="yanes yannick lebigre agnes neboit"/></a></div>
+                <div class="col-xs-6 col-sm-3 image"><a href="#" data-featherlight="images/gallery/2.jpg"><img
+                        src="images/gallery/2.jpg" alt="yanes yannick lebigre agnes neboit"/></a></div>
+                <div class="col-xs-6 col-sm-3 image"><a href="#" data-featherlight="images/gallery/3.jpg"><img
+                        src="images/gallery/3.jpg" alt="yanes yannick lebigre agnes neboit"/></a></div>
+                <div class="col-xs-6 col-sm-3 image"><a href="#" data-featherlight="images/gallery/4.jpg"><img
+                        src="images/gallery/4.jpg" alt="yanes yannick lebigre agnes neboit"/></a></div>
             </div>
         </div>
     </section>
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-4"><h3>Contact</h3></div>
-                <div class="col-xs-12 col-sm-4"><h3>Liens externes</h3></div>
-                <div class="col-xs-12 col-sm-4"><h3>Réseaux</h3></div>
+                <div class="col-xs-12 col-sm-4">
+                    <h3>Contact</h3>
+                    <hr>
+                    <p><a href="mailto:contact@mail.com">contact@mail.com</a></p>
+
+                    <p><a href="tel:06 00 00 00 00">06 00 00 00 00</a></p>
+                </div>
+                <div class="col-xs-12 col-sm-4"></div>
+                <div class="col-xs-12 col-sm-4">
+                    <h3>Réseaux</h3>
+                    <hr>
+                    <p>Suivez-nous sur &middot;<a href="#">Facebook</a>&middot;</p>
+                </div>
             </div>
         </div>
     </footer>
+    <a id="fixed_btn">
+        <img id="play" src="images/icon_play.png" style="display:none"/>
+        <img id="pause" src="images/icon_pause.png"/>
+    </a>
 </div>
 
 
@@ -175,6 +223,7 @@
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
 
+<script src="scripts/featherlight.min.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     (function (b, o, i, l, e, r) {

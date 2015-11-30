@@ -9,11 +9,26 @@ body {
     height: 100%;
     width: 100%;
     color: #fff6de;
+    font-family: 'Old Standard TT', Helvetica, serif;
 }
 
 .container-fluid {
     padding: 0;
     margin: 0;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+hr.small_hr {
+    width: 20%;
+    margin: 0 0 20px 0;
+    border-top: 3px solid #eee;
+}
+
+.mobile_visible {
+    display: none;
 }
 
 /* Custom page header */
@@ -32,26 +47,45 @@ a, a:hover, a:focus, a:visited {
 }
 
 h1 {
+    font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
     position: absolute;
     bottom: 20px;
-    left: 20px;
-}
-
-.subtitle {
-    font-style: italic;
-    float: right;
-    font-size: 0.5em;
+    left: 40px;
+    line-height: 130%;
 }
 
 .name {
     float: right;
-    font-size: 0.8em;
+    font-size: 0.7em;
+    position: relative;
+    font-weight: 400;
+}
+
+.name:before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    border-bottom: 3px solid #eee;
+    left: -145px;
+    top: 20px;
 }
 
 h2 {
     text-transform: uppercase;
     margin: 20% 0 0 20%;
+}
+
+.subtitle {
+    font-family: 'Old Standard TT', Helvetica, serif;
+    font-style: italic;
+    float: right;
+    font-size: .6em;
+    text-transform: none;
+    font-weight: 100;
+    letter-spacing: 0px;
 }
 
 #background_video {
@@ -65,13 +99,15 @@ h2 {
     -webkit-filter: blur(5px) saturate(30%);
     -moz-filter: blur(5px) saturate(30%);
     -o-filter: blur(5px) saturate(30%);
-    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
 }
 
 #background_video video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background: url(../images/background_video.jpg) center center no-repeat;
+    background-size: cover;
 }
 
 #filter_video {
@@ -98,6 +134,7 @@ nav {
     position: fixed;
     top: 20px;
     right: 5%;
+    font-style: italic;
 }
 
 nav li {
@@ -105,35 +142,87 @@ nav li {
     color: #fff;
 }
 
+nav li:hover {
+    border-bottom: 3px solid #eee;
+}
+
 section {
     position: relative;
     height: 100vh;
     width: 100%;
-}
-
-section {
     padding-top: 100px;
 }
 
+section h3 {
+    text-transform: uppercase;
+    line-height: 230%;
+}
+
 #presentation {
-    background: url(../images/yanes.jpg) center center no-repeat;
+    background: url(../images/yanes.jpg) left center no-repeat;
     background-size: cover;
     -webkit-filter: grayscale(0.6);
     filter: grayscale(0.6);
     -moz-filter: grayscale(0.6);
 }
 
+#presentation h3 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 150%;
+}
+
+.bigger {
+    font-size: 1.6em;
+}
+
+#presentation article {
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    left: 36%;
+}
+
+#presentation article:before {
+    content: "";
+    width: 28%;
+    border-bottom: 3px solid #eee;
+    position: absolute;
+    top: 8px;
+    left: -35%;
+}
+
 .presentation_agnes {
+    font-weight: bold;
     position: absolute;
     color: #333;
-    top: 8vh;
-    left: 26vw;
+    top: 10vh;
+    left: 30vw;
+}
+
+#presentation .presentation_agnes article:before {
+    border-bottom: 3px solid #333;
 }
 
 .presentation_yannick {
     position: absolute;
-    left: 2%;
-    top: 70vh;
+    left: 17vw;
+    top: 55vh;
+}
+
+#repertoire .col-md-4 {
+    position: relative;
+    left: 7%;
+}
+
+#repertoire .first_paragraph:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -17%;
+    width: 15%;
+    border-bottom: 3px solid #eee;
 }
 
 #contact {
@@ -145,22 +234,160 @@ section {
 }
 
 form {
-    margin-top: 20vh;
+    margin-top: 5vh;
+}
+
+form .form-group {
+    padding: 0;
+}
+
+form .form-control {
+    border-radius: 0;
+    background: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 3px solid #eee;
+    display: inline-block;
+    width: 70%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+form .form-control:focus {
+    border: none;
+    border-bottom: 3px solid #eee;
+    box-shadow: none;
+}
+
+textarea.form-control {
+    top: 20px;
+    position: relative;
+    width: 66%;
+}
+
+form .btn {
+    width: 90px;
+    margin: 50px 27px 0 0;
+    float: right;
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+    transition: .3s;
+}
+
+form button:hover {
+    background: #fff;
+    color: #333;
+}
+
+form label, form input, form textarea {
+    font-weight: normal;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #gallerie {
     padding-bottom: 100px;
-    height: 80vh;
+    height: 100vh;
 }
 
 .image img {
     max-width: 100%;
 }
 
+.featherlight .featherlight-content {
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+}
+
 footer {
-    height: 20vh;
+    height: 40vh;
     background-color: #333;
 }
-footer h3{
+
+footer h3 {
     text-align: center;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#fixed_btn {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #eee;
+    border-radius: 100%;
+}
+
+#fixed_btn img {
+    max-width: 58%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    position: relative;
+}
+
+#fixed_btn.pause {
+}
+
+@media screen and (max-width: 480px) {
+    .mobile_visible {
+        display: inline-block;
+    }
+
+    #background_video video {
+        display: none;
+    }
+
+    #background_video {
+        background: url(../images/background_video.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    nav {
+        position: absolute;
+    }
+
+    nav li {
+        text-align: right;
+        display: inline-block;
+        line-height: 270%;
+    }
+
+    h1 {
+        padding: 20px;
+        left: 0;
+    }
+
+    .presentation_agnes {
+        top: 2vh;
+        left: 5vw;
+    }
+
+    .presentation_yannick {
+        left: 5vw;
+    }
+    #presentation article{
+        left: 33%;
+    }
+
+    #repertoire .col-md-4 {
+        left: 0;
+    }
+
+    #contact {
+        padding-left: 20px;
+    }
+
+    footer {
+        height: 400px;
+    }
 }
